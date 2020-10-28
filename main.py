@@ -18,8 +18,7 @@
 
 
 import pandas as pd
-df = pd.read_csv('eredmenyek.csv', delimiter='')
-# User list comprehension to create a list of lists from Dataframe rows
-list_of_rows = [list(row) for row in df.values]
-# Print list of lists i.e. rows
-print(list_of_rows)
+col_list=["név", "","" ]
+data = pd.read_csv("balkezesek.csv", sep=",", encoding="ISO-8859-1", usecols=col)
+# Preview the first 5 lines of the loaded data
+print(data["név"])
