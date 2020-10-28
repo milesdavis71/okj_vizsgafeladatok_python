@@ -18,7 +18,9 @@
 
 
 import pandas as pd
-col_list=["név", "","" ]
-data = pd.read_csv("balkezesek.csv", sep=",", encoding="ISO-8859-1", usecols=col)
-# Preview the first 5 lines of the loaded data
-print(data["név"])
+
+
+df = pd.read_csv("balkezesek.csv", sep=';')
+print(df)
+# oktoberbenPalyaraLeptek =
+
