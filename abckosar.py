@@ -1,7 +1,7 @@
 import pandas as pd
 
 header_names = ['haz', 'ideg', 'hazpont', 'idegpont', 'helysz', 'datum']
-df = pd.read_csv('eredmenyek.csv', encoding='windows-1250', sep=';', header=0, names=header_names)
+df = pd.read_csv('src/eredmenyek.csv', encoding='windows-1250', sep=';', header=0, names=header_names)
 
 real_hazai = df[df['haz'].str.contains('Real Madrid')]
 real_idegen = df[df['ideg'].str.contains('Real Madrid')]

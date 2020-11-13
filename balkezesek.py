@@ -1,8 +1,7 @@
 import pandas as pd
 
-df = pd.read_csv("balkezesek.csv", sep=';', header=0)
-df['elsoev'] = pd.to_datetime(df['elso']).dt.year
-df['utolsoev'] = pd.to_datetime(df['utolso']).dt.year
+df = pd.read_csv("src/balkezesek.csv", sep=';', header=0)
+
 
 print(len(df))
 oktoberbenPalyaraLeptek = df[df['utolso'].str.contains("1999-10")]
