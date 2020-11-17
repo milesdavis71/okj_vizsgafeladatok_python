@@ -13,7 +13,7 @@ barcelona_teljes_nev = df[df['haz'].str.contains('Barcelona')]
 print('5. feladat: ', (barcelona_teljes_nev['haz']).head(1).to_string(index=False))
 jateknap = df[df['datum'].str.contains('2004-11-21')]
 print('6. feladat:')
+
 print((jateknap['haz'] + " - " + jateknap['ideg'] + ' ' + jateknap['idegpont'].map(str) + ' : ' + jateknap[
-    'hazpont'].map(str))
-      .to_string(index=False))
+    'hazpont'].map(str)).to_string(index=False))
 print(df['haz'].value_counts().loc[lambda x: x > 20])
