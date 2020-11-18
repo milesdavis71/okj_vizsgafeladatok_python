@@ -6,10 +6,9 @@ print(f'Elemek szama: {len(df)}')
 felfedezesek_okorban = df[df['ev'].str.contains('kor')]
 print(f'Felfedezeek szama az okorban: {len(felfedezesek_okorban)}')
 input_vegyjel = input('Adj egy vegyjelet')
+while not input_vegyjel.isascii() and not len(input_vegyjel)<2:
+    input_vegyjel = input('Nem jo, adj egy masik karaktert')
 
-def bevittvegyjelvalidalas(vegyjel):
-    hossz = True
-    angolkarakterek = True
-    if len(vegyjel) > 2:
-        joe = False
-        if vegyjel.contains65 & vegyjel
+df_lower = df['vegyjel'].str.lower()
+beirt_elem = df[df_lower.str.contains(input_vegyjel.lower())]
+print(beirt_elem['elem'])

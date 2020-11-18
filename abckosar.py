@@ -17,3 +17,5 @@ print('6. feladat:')
 print((jateknap['haz'] + " - " + jateknap['ideg'] + ' ' + jateknap['idegpont'].map(str) + ' : ' + jateknap[
     'hazpont'].map(str)).to_string(index=False))
 print(df['haz'].value_counts().loc[lambda x: x > 20])
+
+
