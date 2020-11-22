@@ -11,4 +11,3 @@ while not input_vegyjel.isascii() and not len(input_vegyjel)<2:
 
 df_lower = df['vegyjel'].str.lower()
 beirt_elem = df[df_lower.str.contains(input_vegyjel.lower())]
-print(beirt_elem['elem'])
